@@ -11,10 +11,10 @@ var task = " "
 
 function saveTask(timeBlocks, task) {
     $(".saveBtn").on("click", function () {
-
-        console.log(this)
+localStorage.clear();
+        // console.log(this)
         var newTask = $(this).siblings(".description").val();
-        console.log(newTask)
+        // console.log(newTask)
         var saveTime = $(this).attr("id");
         localStorage.setItem(saveTime, newTask);
 retrieveTask()
