@@ -1,28 +1,26 @@
 var today = moment()
 today.format("LLLL")
-console.log(today.format("LLLL"))
+// console.log(today.format("LLLL"))
 $("#currentDay").text(today.format("LLLL"))
 
 
+
 var timeBlocks = ["9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm"];
-var task = ""
+var task = " "
 
 
-function saveTask(timeBlock, task) {
+function saveTask(timeBlocks, task) {
+
+    var task = localStorage.getItem("task");
+    console.log(this);
+
     $(".saveBtn").on("click", function () {
-        localStorage.setItem(timeBlock, task);
+        localStorage.setItem(timeBlocks, task);
         console.log(this)
-        for (var i = 0; i < timeBlocks.length; i++) {
-            var task = localStorage.getItem(timeBlocks[timeBlocks.length]);
-            // console.log(this);
+    //     for (var i = 0; i < timeBlocks.length; i++) {
 
-        }
+
+    //  }
     })
 }
 saveTask()
-
-
-
-
-//     //change text of relevant timeblock to task
-// }
