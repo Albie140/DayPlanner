@@ -3,4 +3,4 @@ For this assignment, I created a Day Planner for a busy employee. With this Day 
 
 See screenshot below.
 
-![screenshot of scheduler](workdayScheduler.jpg)
+![screenshot of scheduler](workdayScheduler.jpeg);
